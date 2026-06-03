@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Laragh Gallagher</title>
+<meta name="description" content="Get in touch with Laragh Gallagher.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">LG©</a>
+  <div class="links">
+    <a href="about.html" class="roll"><span>About</span><span>About</span></a>
+    <a href="work.html" class="roll"><span>Work</span><span>Work</span></a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<header class="pagehead">
+  <div class="eyebrow">Contact</div>
+  <h1>say <b>hello</b></h1>
+  <p class="sub" style="max-width:46ch;margin-top:var(--s4);color:var(--ash);font-size:1.15rem">Got a brief, a big idea, or just a hunch? I read everything (100% chance), and I usually reply fast.</p>
+  <a class="bigmail" href="mailto:laraghgallagher@yahoo.com">laraghgallagher@yahoo.com</a>
+</header>
+
+<section class="reveal">
+  <div class="eyebrow">Find me elsewhere</div>
+  <div class="connect" id="connect"></div>
+</section>
+
+<section class="reveal">
+  <div class="eyebrow">The details</div>
+  <div class="connect">
+    <a class="cn" href="mailto:laraghgallagher@yahoo.com"><div class="p">Email</div><div class="s">i actually read it</div></a>
+    <a class="cn" href="tel:+18179915975"><div class="p">817.991.5975</div><div class="s">call or text</div></a>
+    <div class="cn"><div class="p">Based in Texas</div><div class="s">working everywhere</div></div>
+  </div>
+</section>
+
+<footer class="reveal">
+  <div class="big">let's make something<br><b>worth remembering.</b></div>
+  <div class="meta"><span>© 2026 Laragh Gallagher</span><span>Made to be remembered</span></div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  const conn=[
+    ["Dribbble","the pretty stuff","#"],
+    ["Instagram","behind the scenes","#"],
+    ["LinkedIn","the serious me","#"],
+    ["Behance","the full archive","#"]
+  ];
+  const cn=document.getElementById('connect');
+  conn.forEach(c=>cn.innerHTML+=`<a class="cn" href="${c[2]}"><div class="p">${c[0]}</div><div class="s">${c[1]}</div></a>`);
+</script>
+</body>
+</html>
